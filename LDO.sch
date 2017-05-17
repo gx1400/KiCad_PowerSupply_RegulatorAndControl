@@ -1,0 +1,157 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Custom_DAR
+LIBS:Regulator-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM1117-5.0 U4
+U 1 1 591CE461
+P 3650 1600
+F 0 "U4" H 3750 1350 50  0000 C CNN
+F 1 "LM1117-5.0" H 3650 1850 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 3650 1600 50  0001 C CNN
+F 3 "" H 3650 1600 50  0001 C CNN
+F 4 "LM1117MP-5.0/NOPB" H 3650 1600 60  0001 C CNN "MPN"
+	1    3650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C14
+U 1 1 591CE462
+P 2850 1850
+F 0 "C14" H 2875 1950 50  0000 L CNN
+F 1 "10u" H 2875 1750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2888 1700 50  0001 C CNN
+F 3 "" H 2850 1850 50  0001 C CNN
+F 4 "F951C106MPAAQ2" H 2850 1850 60  0001 C CNN "MPN"
+	1    2850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C15
+U 1 1 591CE463
+P 4450 1850
+F 0 "C15" H 4475 1950 50  0000 L CNN
+F 1 "10u" H 4475 1750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4488 1700 50  0001 C CNN
+F 3 "" H 4450 1850 50  0001 C CNN
+F 4 "F951C106MPAAQ2" H 4450 1850 60  0001 C CNN "MPN"
+	1    4450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR051
+U 1 1 591CE465
+P 2850 2100
+F 0 "#PWR051" H 2850 1850 50  0001 C CNN
+F 1 "GND" H 2850 1950 50  0000 C CNN
+F 2 "" H 2850 2100 50  0001 C CNN
+F 3 "" H 2850 2100 50  0001 C CNN
+	1    2850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR052
+U 1 1 591CE466
+P 3650 2100
+F 0 "#PWR052" H 3650 1850 50  0001 C CNN
+F 1 "GND" H 3650 1950 50  0000 C CNN
+F 2 "" H 3650 2100 50  0001 C CNN
+F 3 "" H 3650 2100 50  0001 C CNN
+	1    3650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR053
+U 1 1 591CE467
+P 4450 2100
+F 0 "#PWR053" H 4450 1850 50  0001 C CNN
+F 1 "GND" H 4450 1950 50  0000 C CNN
+F 2 "" H 4450 2100 50  0001 C CNN
+F 3 "" H 4450 2100 50  0001 C CNN
+	1    4450 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1600 3350 1600
+Wire Wire Line
+	2850 1700 2850 1600
+Connection ~ 2850 1600
+Wire Wire Line
+	2850 2100 2850 2000
+Wire Wire Line
+	3650 2100 3650 1900
+Wire Wire Line
+	4450 2100 4450 2000
+Wire Wire Line
+	4450 1600 4450 1700
+Wire Wire Line
+	3950 1600 4950 1600
+Connection ~ 4450 1600
+Text HLabel 4950 1600 2    60   Output ~ 0
++5V
+Text Label 4750 1600 2    60   ~ 0
++5V
+Text Label 2700 1600 2    60   ~ 0
++12V
+Text HLabel 2400 1600 0    60   Input ~ 0
++12V
+Text HLabel 2250 2450 0    60   BiDi ~ 0
+GND
+$Comp
+L GND #PWR054
+U 1 1 591CEC51
+P 2500 2500
+F 0 "#PWR054" H 2500 2250 50  0001 C CNN
+F 1 "GND" H 2500 2350 50  0000 C CNN
+F 2 "" H 2500 2500 50  0001 C CNN
+F 3 "" H 2500 2500 50  0001 C CNN
+	1    2500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2500 2500 2450
+Wire Wire Line
+	2500 2450 2250 2450
+$EndSCHEMATC
