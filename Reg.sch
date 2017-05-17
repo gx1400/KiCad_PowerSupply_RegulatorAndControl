@@ -1058,4 +1058,12 @@ Vread
 Wire Wire Line
 	8400 3275 8100 3275
 Connection ~ 8100 3275
+Text Label 6825 850  0    60   ~ 0
+I_Q3
+Text Label 6850 1350 0    60   ~ 0
+I_Q4
+Text Label 6850 1850 0    60   ~ 0
+I_Q5
+Text Label 6850 2350 0    60   ~ 0
+I_Q6
 $EndSCHEMATC
